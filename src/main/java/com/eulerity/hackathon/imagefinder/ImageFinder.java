@@ -26,6 +26,7 @@ public class ImageFinder extends HttpServlet {
 
     // 用于存储爬取结果
     private static final ConcurrentHashMap<String, CompletableFuture<CrawlResult>> crawlResults = new ConcurrentHashMap<>();
+    private static final ConcurrentHashMap<String, Future<?>> runningTasks = new ConcurrentHashMap<>();
 
     /**
      * The constant testImages.
@@ -38,7 +39,7 @@ public class ImageFinder extends HttpServlet {
     };
 
     @Override
-    protected final void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("application/json");
         String url = req.getParameter("url");
 
@@ -50,29 +51,55 @@ public class ImageFinder extends HttpServlet {
 
         System.out.println("[Request] Received crawl request for: " + url);
 
-        CompletableFuture<CrawlResult> future = crawlResults.computeIfAbsent(url, key -> startCrawling(url));
+        CompletableFuture<CrawlResult> future = crawlResults.get(url);
+
+        if (future != null && future.isCancelled()) {
+            // **如果任务已取消，重新启动爬取**
+            System.out.println("[Restart] Previous crawl for " + url + " was cancelled. Restarting...");
+            crawlResults.remove(url);
+            future = startCrawling(url);
+            crawlResults.put(url, future);
+        } else if (future == null) {
+            future = startCrawling(url);
+            crawlResults.put(url, future);
+        }
 
         try {
-            // **等待最多 10 秒**，如果超时，则返回当前已爬取的数据
             CrawlResult result = future.get(10, TimeUnit.SECONDS);
             resp.setStatus(HttpServletResponse.SC_OK);
             resp.getWriter().print(GSON.toJson(result));
         } catch (TimeoutException e) {
-            // **超时了，但仍然返回当前爬取到的结果**
             System.out.println("[Timeout] Crawling for " + url + " exceeded 10 seconds, returning partial results.");
-
-            // **获取当前已爬取的部分数据**
             CrawlResult partialResult = getCurrentCrawlResult(url);
-
-            // **返回部分爬取数据**
             resp.setStatus(HttpServletResponse.SC_OK);
             resp.getWriter().print(GSON.toJson(partialResult));
 
-            // **取消未完成的任务，避免资源浪费**
+            // **取消任务并移除缓存**
             future.cancel(true);
-        } catch (Exception e) {
+            crawlResults.remove(url);
+
+            // **取消 `Future<?>` 任务**
+            Future<?> task = runningTasks.remove(url);
+            if (task != null) {
+                task.cancel(true);
+            }
+        } catch (CancellationException e) {
+            System.out.println("[Cancelled] Crawl task for " + url + " was cancelled.");
+            resp.setStatus(HttpServletResponse.SC_GONE);
+            resp.getWriter().print(GSON.toJson(new CrawlResult("error", "Crawling was cancelled.", null, null)));
+
+            // **移除已取消的任务**
+            crawlResults.remove(url);
+        } catch (ExecutionException e) {
+            System.out.println("[ExecutionException] Crawling failed for " + url + ": " + e.getMessage());
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             resp.getWriter().print(GSON.toJson(new CrawlResult("error", "Crawling failed.", null, null)));
+
+            // **移除失败任务**
+            crawlResults.remove(url);
+        } catch (Exception e) {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            resp.getWriter().print(GSON.toJson(new CrawlResult("error", "Unexpected error occurred.", null, null)));
         }
     }
 
@@ -126,7 +153,7 @@ public class ImageFinder extends HttpServlet {
     private CompletableFuture<CrawlResult> startCrawling(String url) {
         CompletableFuture<CrawlResult> future = new CompletableFuture<>();
 
-        CompletableFuture.runAsync(() -> {
+        Future<?> task = CrawlingThreadPool.getInstance().getExecutor().submit(() -> {
             try {
                 ImageCrawler crawler = ImageCrawlerFactory.getInstance().getCrawler(url);
                 crawler.startCrawling(url, 0);
@@ -140,34 +167,30 @@ public class ImageFinder extends HttpServlet {
                         return;
                     }
                     Thread.sleep(1000);
+
+                    // **定期检查线程是否被取消**
+                    if (Thread.currentThread().isInterrupted()) {
+                        System.out.println("[Cancelled] Crawling task interrupted for " + url);
+                        return;
+                    }
                 }
 
-                // ✅ 任务完成，确保 future.complete()
                 CrawlResult result = new CrawlResult("completed", "Crawling completed successfully.",
                         crawler.getImageUrlsAsJson(), crawler.getLogoUrlsAsJson());
-
-                future.complete(result);  // 重要：标记任务完成
+                future.complete(result);
                 System.out.println("[Crawler] " + url + " crawling completed.");
 
-                // ✅ 任务完成后，延迟 60 秒清理
-                CompletableFuture.runAsync(() -> {
-                    try {
-                        Thread.sleep(60000);
-                        crawlResults.remove(url);
-                        System.out.println("[Cleanup] Removed crawl result for: " + url);
-                    } catch (InterruptedException e) {
-                        Thread.currentThread().interrupt();
-                    }
-                });
-
             } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
+                Thread.currentThread().interrupt();  // 重新设置中断状态
                 future.complete(new CrawlResult("error", "Crawling was interrupted.", null, null));
             } catch (MalformedURLException e) {
                 future.complete(new CrawlResult("error", "Invalid URL format.", null, null));
+            } finally {
+                runningTasks.remove(url);  // **任务完成后清理**
             }
-        }, CrawlingThreadPool.getInstance().getExecutor());
+        });
 
+        runningTasks.put(url, task);
         return future;
     }
 

@@ -89,20 +89,28 @@ public class ImageCrawler {
 
     private void crawl(String url, int depth) throws CrawlException {
         try {
+            if (Thread.currentThread().isInterrupted()) {
+                System.out.println("[Cancelled] Crawl interrupted before starting: " + url);
+                return;
+            }
+
             Logger.getInstance().info("[Crawling] " + url);
             Document doc = Jsoup.connect(url)
                     .userAgent("Mozilla/5.0")
-                    .timeout(5000) // avoid long-time hang up
+                    .timeout(5000)
                     .get();
 
             Elements images = doc.select("img");
             for (Element img : images) {
+                if (Thread.currentThread().isInterrupted()) {
+                    System.out.println("[Cancelled] Crawl interrupted while processing images: " + url);
+                    return;
+                }
+
                 String src = img.absUrl("src");
                 if (!src.isEmpty() && isValidImage(src)) {
-                    System.out.println("[Crawling] images" + src);
                     imageUrls.add(src);
                     if (isLogoImage(src)) {
-                        System.out.println("[Crawling] logo" + src);
                         logoImages.add(src);
                     }
                 }
@@ -111,6 +119,11 @@ public class ImageCrawler {
             if (depth < maxDepth) {
                 Elements links = doc.select("a[href]");
                 for (Element link : links) {
+                    if (Thread.currentThread().isInterrupted()) {
+                        System.out.println("[Cancelled] Crawl interrupted while processing links: " + url);
+                        return;
+                    }
+
                     String nextUrl = link.absUrl("href");
                     if (isSameDomain(nextUrl) && !visitedPages.contains(nextUrl)) {
                         startCrawling(nextUrl, depth + 1);
