@@ -24,7 +24,6 @@ public class ImageFinder extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
-    // 用于存储爬取结果
     private static final ConcurrentHashMap<String, CompletableFuture<CrawlResult>> crawlResults = new ConcurrentHashMap<>();
     private static final ConcurrentHashMap<String, Future<?>> runningTasks = new ConcurrentHashMap<>();
 
@@ -54,7 +53,7 @@ public class ImageFinder extends HttpServlet {
         CompletableFuture<CrawlResult> future = crawlResults.get(url);
 
         if (future != null && future.isCancelled()) {
-            // **如果任务已取消，重新启动爬取**
+            // Restart the crawl if the task was cancelled
             System.out.println("[Restart] Previous crawl for " + url + " was cancelled. Restarting...");
             crawlResults.remove(url);
             future = startCrawling(url);
@@ -74,11 +73,11 @@ public class ImageFinder extends HttpServlet {
             resp.setStatus(HttpServletResponse.SC_OK);
             resp.getWriter().print(GSON.toJson(partialResult));
 
-            // **取消任务并移除缓存**
+            // cancel teak can remove cache
             future.cancel(true);
             crawlResults.remove(url);
 
-            // **取消 `Future<?>` 任务**
+            // cancel `Future<?>` task
             Future<?> task = runningTasks.remove(url);
             if (task != null) {
                 task.cancel(true);
@@ -88,14 +87,14 @@ public class ImageFinder extends HttpServlet {
             resp.setStatus(HttpServletResponse.SC_GONE);
             resp.getWriter().print(GSON.toJson(new CrawlResult("error", "Crawling was cancelled.", null, null)));
 
-            // **移除已取消的任务**
+            // remove tasks has been canceled
             crawlResults.remove(url);
         } catch (ExecutionException e) {
             System.out.println("[ExecutionException] Crawling failed for " + url + ": " + e.getMessage());
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             resp.getWriter().print(GSON.toJson(new CrawlResult("error", "Crawling failed.", null, null)));
 
-            // **移除失败任务**
+            // remove failed tasks
             crawlResults.remove(url);
         } catch (Exception e) {
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
@@ -121,13 +120,12 @@ public class ImageFinder extends HttpServlet {
         }
 
         try {
-            if (futureResult.isDone()) {  // 任务完成，返回 200 OK
+            if (futureResult.isDone()) {
                 CrawlResult result = futureResult.get();
                 response.setStatus(HttpServletResponse.SC_OK);
                 response.setContentType("application/json");
                 response.getWriter().print(GSON.toJson(result));
 
-                // ✅ 任务完成后，异步清理
                 CompletableFuture.runAsync(() -> {
                     try {
                         Thread.sleep(60000);
@@ -137,7 +135,7 @@ public class ImageFinder extends HttpServlet {
                     }
                 });
 
-            } else {  // 任务仍在进行中，返回 202
+            } else {
                 response.setStatus(HttpServletResponse.SC_ACCEPTED);
                 response.getWriter().print(GSON.toJson(new CrawlResult("in_progress", "Crawling is still in progress. Try again later.", null, null)));
             }
@@ -148,7 +146,7 @@ public class ImageFinder extends HttpServlet {
     }
 
     /**
-     * 启动爬取任务并返回 `CompletableFuture`
+     * start crawl and return `CompletableFuture`
      */
     private CompletableFuture<CrawlResult> startCrawling(String url) {
         CompletableFuture<CrawlResult> future = new CompletableFuture<>();
@@ -168,7 +166,7 @@ public class ImageFinder extends HttpServlet {
                     }
                     Thread.sleep(1000);
 
-                    // **定期检查线程是否被取消**
+                    // crontask to check if task is canceled
                     if (Thread.currentThread().isInterrupted()) {
                         System.out.println("[Cancelled] Crawling task interrupted for " + url);
                         return;
@@ -181,12 +179,12 @@ public class ImageFinder extends HttpServlet {
                 System.out.println("[Crawler] " + url + " crawling completed.");
 
             } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();  // 重新设置中断状态
+                Thread.currentThread().interrupt();  // Reset interrupt status
                 future.complete(new CrawlResult("error", "Crawling was interrupted.", null, null));
             } catch (MalformedURLException e) {
                 future.complete(new CrawlResult("error", "Invalid URL format.", null, null));
             } finally {
-                runningTasks.remove(url);  // **任务完成后清理**
+                runningTasks.remove(url);  // Clean up after task completion
             }
         });
 
@@ -195,18 +193,18 @@ public class ImageFinder extends HttpServlet {
     }
 
     /**
-     * 获取当前爬取到的部分数据（如果超时）
+     * Get part of the data currently crawled (if timeout)
      */
     private CrawlResult getCurrentCrawlResult(String url) throws MalformedURLException {
         ImageCrawler crawler = ImageCrawlerFactory.getInstance().getCrawler(url);
         return new CrawlResult("partial",
                 "Crawling exceeded time limit, returning available results.",
-                crawler.getImageUrlsAsJson(),  // **返回已爬取到的图片**
-                crawler.getLogoUrlsAsJson());  // **返回已爬取到的 logo**
+                crawler.getImageUrlsAsJson(),
+                crawler.getLogoUrlsAsJson());
     }
 
     /**
-     * 销毁 Servlet 时关闭线程池
+     * Shut down the thread pool when destroying the Servlet
      */
     @Override
     public void destroy() {

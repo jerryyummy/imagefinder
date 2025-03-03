@@ -184,8 +184,6 @@ public class ImageCrawler {
      */
     private boolean isLogoImage(String imageUrl) {
         String lowerCaseUrl = imageUrl.toLowerCase();
-
-        // 常见 logo 关键词
         String[] logoKeywords = {"logo", "brand", "favicon", "icon", "corporate", "symbol"};
 
         for (String keyword : logoKeywords) {

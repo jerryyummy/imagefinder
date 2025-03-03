@@ -10,21 +10,21 @@ import java.util.concurrent.TimeUnit;
  * The type Crawling thread pool.
  */
 public class CrawlingThreadPool {
-    private static final int THREAD_COUNT = 10; // 线程池大小
+    private static final int THREAD_COUNT = 10;
     private static final CrawlingThreadPool INSTANCE = new CrawlingThreadPool();
 
     private final ThreadPoolExecutor executorService;
-    private RateLimiter rateLimiter; // 速率限制器
+    private RateLimiter rateLimiter;
 
     private CrawlingThreadPool() {
         this.executorService = new ThreadPoolExecutor(
                 THREAD_COUNT, THREAD_COUNT,
                 60L, TimeUnit.SECONDS,
-                new LinkedBlockingQueue<>(100), // 任务队列最大 100
+                new LinkedBlockingQueue<>(100),
                 Executors.defaultThreadFactory(),
-                new ThreadPoolExecutor.CallerRunsPolicy() // 超过限制时，当前线程执行任务
+                new ThreadPoolExecutor.CallerRunsPolicy()
         );
-        this.rateLimiter = new RateLimiter(10, 200); // 默认限流器（10 请求，2 秒漏 1 个）
+        this.rateLimiter = new RateLimiter(10, 200);
     }
 
     /**
@@ -37,9 +37,9 @@ public class CrawlingThreadPool {
     }
 
     /**
-     * 提交爬取任务（受 RateLimiter 限制）
+     * submit
      *
-     * @param task 爬取任务
+     * @param task crawl tasks
      */
     public void submitTask(Runnable task) {
         if (rateLimiter.allowRequestTokenBucket()) {
@@ -48,8 +48,8 @@ public class CrawlingThreadPool {
         } else {
             System.out.println("[Rate Limited] Task delayed. Queue Size: " + executorService.getQueue().size());
             try {
-                TimeUnit.MILLISECONDS.sleep(500); // 等待一段时间再尝试提交
-                executorService.submit(task); // 重新提交任务
+                TimeUnit.MILLISECONDS.sleep(500); // wait and re-submit
+                executorService.submit(task);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
