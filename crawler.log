@@ -1,0 +1,684 @@
+Mar 02, 2025 12:26:00 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 12:26:00] [Crawling] https://www.nytimes.com
+Mar 02, 2025 12:26:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 12:26:06] [Crawling] https://www.nytimes.com#site-content
+Mar 02, 2025 12:26:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 12:26:06] [Crawling] https://www.nytimes.com#site-index
+Mar 02, 2025 12:26:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 12:26:06] [Crawling] https://www.nytimes.com#after-dfp-ad-top
+Mar 02, 2025 12:26:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 12:26:06] [Crawling] https://www.nytimes.com/
+Mar 02, 2025 12:26:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 12:26:06] [Crawling] https://www.nytimes.com/international/
+Mar 02, 2025 12:26:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 12:26:06] [Crawling] https://www.nytimes.com/ca/
+Mar 02, 2025 12:26:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 12:26:06] [Crawling] https://www.nytimes.com/es/
+Mar 02, 2025 12:26:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 12:26:06] [Crawling] https://www.nytimes.com/section/todayspaper
+Mar 02, 2025 12:26:06 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 12:26:06] CrawlException: Failed to crawl URL: https://www.nytimes.com/es/ | Cause: HTTP error fetching URL
+Mar 02, 2025 12:26:06 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 12:26:06] [CrawlException] Failed to crawl URL: https://www.nytimes.com/es/
+Mar 02, 2025 12:26:07 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 12:26:07] [Crawling] https://www.nytimes.com/section/us
+Mar 02, 2025 5:03:35 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:03:35] [Crawling] https://www.nytimes.com
+Mar 02, 2025 5:03:43 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:03:43] [Crawling] https://www.nytimes.com#site-content
+Mar 02, 2025 5:03:43 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:03:43] [Crawling] https://www.nytimes.com#site-index
+Mar 02, 2025 5:03:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:03:44] [Crawling] https://www.nytimes.com#after-dfp-ad-top
+Mar 02, 2025 5:03:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:03:44] [Crawling] https://www.nytimes.com/
+Mar 02, 2025 5:03:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:03:44] [Crawling] https://www.nytimes.com/international/
+Mar 02, 2025 5:03:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:03:44] [Crawling] https://www.nytimes.com/ca/
+Mar 02, 2025 5:03:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:03:44] [Crawling] https://www.nytimes.com/es/
+Mar 02, 2025 5:03:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:03:44] [Crawling] https://www.nytimes.com/section/todayspaper
+Mar 02, 2025 5:03:44 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:03:44] CrawlException: Failed to crawl URL: https://www.nytimes.com/es/ | Cause: HTTP error fetching URL
+Mar 02, 2025 5:03:44 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:03:44] [CrawlException] Failed to crawl URL: https://www.nytimes.com/es/
+Mar 02, 2025 5:03:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:03:45] [Crawling] https://www.nytimes.com/section/us
+Mar 02, 2025 5:10:10 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:10:10] [Crawling] https://www.nytimes.com
+Mar 02, 2025 5:10:19 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:10:19] [Crawling] https://www.nytimes.com#site-content
+Mar 02, 2025 5:10:19 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:10:19] [Crawling] https://www.nytimes.com#site-index
+Mar 02, 2025 5:10:19 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:10:19] [Crawling] https://www.nytimes.com#after-dfp-ad-top
+Mar 02, 2025 5:10:19 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:10:19] [Crawling] https://www.nytimes.com/
+Mar 02, 2025 5:10:19 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:10:19] [Crawling] https://www.nytimes.com/international/
+Mar 02, 2025 5:10:20 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:10:20] [Crawling] https://www.nytimes.com/ca/
+Mar 02, 2025 5:10:20 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:10:20] [Crawling] https://www.nytimes.com/es/
+Mar 02, 2025 5:10:20 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:10:20] [Crawling] https://www.nytimes.com/section/todayspaper
+Mar 02, 2025 5:10:20 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:10:20] CrawlException: Failed to crawl URL: https://www.nytimes.com/es/ | Cause: HTTP error fetching URL
+Mar 02, 2025 5:10:20 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:10:20] [CrawlException] Failed to crawl URL: https://www.nytimes.com/es/
+Mar 02, 2025 5:10:20 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:10:20] [Crawling] https://www.nytimes.com/section/us
+Mar 02, 2025 5:18:54 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:18:54] [Crawling] https://www.nytimes.com
+Mar 02, 2025 5:19:05 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:19:05] [Crawling] https://www.nytimes.com#site-content
+Mar 02, 2025 5:19:05 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:19:05] [Crawling] https://www.nytimes.com#site-index
+Mar 02, 2025 5:19:05 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:19:05] [Crawling] https://www.nytimes.com#after-dfp-ad-top
+Mar 02, 2025 5:19:05 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:19:05] [Crawling] https://www.nytimes.com/
+Mar 02, 2025 5:19:05 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:19:05] [Crawling] https://www.nytimes.com/international/
+Mar 02, 2025 5:19:05 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:19:05] [Crawling] https://www.nytimes.com/ca/
+Mar 02, 2025 5:19:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:19:06] [Crawling] https://www.nytimes.com/es/
+Mar 02, 2025 5:19:06 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:19:06] CrawlException: Failed to crawl URL: https://www.nytimes.com/es/ | Cause: HTTP error fetching URL
+Mar 02, 2025 5:19:06 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:19:06] [CrawlException] Failed to crawl URL: https://www.nytimes.com/es/
+Mar 02, 2025 5:19:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:19:06] [Crawling] https://www.nytimes.com/section/todayspaper
+Mar 02, 2025 5:19:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:19:06] [Crawling] https://www.nytimes.com/section/us
+Mar 02, 2025 5:35:14 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:14] [Crawling] https://www.nytimes.com
+Mar 02, 2025 5:35:20 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:20] [Crawling] https://www.nytimes.com#site-content
+Mar 02, 2025 5:35:20 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:20] [Crawling] https://www.nytimes.com#site-index
+Mar 02, 2025 5:35:21 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:21] [Crawling] https://www.nytimes.com#after-dfp-ad-top
+Mar 02, 2025 5:35:21 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:21] [Crawling] https://www.nytimes.com/
+Mar 02, 2025 5:35:21 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:21] [Crawling] https://www.nytimes.com/international/
+Mar 02, 2025 5:35:21 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:21] [Crawling] https://www.nytimes.com/ca/
+Mar 02, 2025 5:35:21 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:21] [Crawling] https://www.nytimes.com/es/
+Mar 02, 2025 5:35:21 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:21] [Crawling] https://www.nytimes.com/section/todayspaper
+Mar 02, 2025 5:35:21 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:35:21] CrawlException: Failed to crawl URL: https://www.nytimes.com/es/ | Cause: HTTP error fetching URL
+Mar 02, 2025 5:35:21 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:35:21] [CrawlException] Failed to crawl URL: https://www.nytimes.com/es/
+Mar 02, 2025 5:35:21 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:21] [Crawling] https://www.nytimes.com/section/us
+Mar 02, 2025 5:35:22 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:22] [Crawling] https://www.nytimes.com/section/politics
+Mar 02, 2025 5:35:23 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:23] [Crawling] https://www.nytimes.com/section/nyregion
+Mar 02, 2025 5:35:24 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:24] [Crawling] https://www.nytimes.com/spotlight/california-news
+Mar 02, 2025 5:35:24 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:24] [Crawling] https://www.nytimes.com/section/education
+Mar 02, 2025 5:35:25 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:25] [Crawling] https://www.nytimes.com/section/health
+Mar 02, 2025 5:35:26 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:26] [Crawling] https://www.nytimes.com/section/obituaries
+Mar 02, 2025 5:35:26 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:26] [Crawling] https://www.nytimes.com/section/science
+Mar 02, 2025 5:35:27 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:27] [Crawling] https://www.nytimes.com/section/climate
+Mar 02, 2025 5:35:27 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:27] [Crawling] https://www.nytimes.com/section/weather
+Mar 02, 2025 5:35:28 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:28] [Crawling] https://www.nytimes.com/section/sports
+Mar 02, 2025 5:35:29 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:29] [Crawling] https://www.nytimes.com/section/business
+Mar 02, 2025 5:35:29 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:29] [Crawling] https://www.nytimes.com/section/technology
+Mar 02, 2025 5:35:31 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:31] [Crawling] https://www.nytimes.com/section/upshot
+Mar 02, 2025 5:35:31 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:31] [Crawling] https://www.nytimes.com/section/magazine
+Mar 02, 2025 5:35:31 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:31] [Crawling] https://www.nytimes.com/news-event/trump-transition
+Mar 02, 2025 5:35:31 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:31] [Crawling] https://www.nytimes.com/topic/organization/us-supreme-court
+Mar 02, 2025 5:35:31 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:31] [Crawling] https://www.nytimes.com/topic/organization/us-congress
+Mar 02, 2025 5:35:32 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:32] [Crawling] https://www.nytimes.com/news-event/immigration-us
+Mar 02, 2025 5:35:32 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:32] [Crawling] https://www.nytimes.com/spotlight/abortion-news
+Mar 02, 2025 5:35:32 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:32] [Crawling] https://www.nytimes.com/newsletters/morning-briefing
+Mar 02, 2025 5:35:32 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:32] [Crawling] https://www.nytimes.com/newsletters/upshot
+Mar 02, 2025 5:35:32 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:32] [Crawling] https://www.nytimes.com/newsletters
+Mar 02, 2025 5:35:32 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:32] [Crawling] https://www.nytimes.com/column/the-daily
+Mar 02, 2025 5:35:33 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:33] [Crawling] https://www.nytimes.com/column/election-run-up-podcast
+Mar 02, 2025 5:35:33 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:33] [Crawling] https://www.nytimes.com/spotlight/podcasts
+Mar 02, 2025 5:35:33 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:33] [Crawling] https://www.nytimes.com/section/world
+Mar 02, 2025 5:35:33 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:33] [Crawling] https://www.nytimes.com/section/world/africa
+Mar 02, 2025 5:35:33 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:33] [Crawling] https://www.nytimes.com/section/world/americas
+Mar 02, 2025 5:35:33 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:33] [Crawling] https://www.nytimes.com/section/world/asia
+Mar 02, 2025 5:35:33 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:33] [Crawling] https://www.nytimes.com/section/world/australia
+Mar 02, 2025 5:35:33 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:33] [Crawling] https://www.nytimes.com/section/world/canada
+Mar 02, 2025 5:35:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:34] [Crawling] https://www.nytimes.com/section/world/europe
+Mar 02, 2025 5:35:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:34] [Crawling] https://www.nytimes.com/section/world/middleeast
+Mar 02, 2025 5:35:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:34] [Crawling] https://www.nytimes.com/news-event/israel-hamas-gaza
+Mar 02, 2025 5:35:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:34] [Crawling] https://www.nytimes.com/news-event/ukraine-russia
+Mar 02, 2025 5:35:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:34] [Crawling] https://www.nytimes.com/spotlight/china-relations
+Mar 02, 2025 5:35:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:34] [Crawling] https://www.nytimes.com/column/the-global-profile
+Mar 02, 2025 5:35:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:34] [Crawling] https://www.nytimes.com/newsletters/morning-briefing-europe
+Mar 02, 2025 5:35:35 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:35] [Crawling] https://www.nytimes.com/newsletters/the-interpreter
+Mar 02, 2025 5:35:35 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:35] [Crawling] https://www.nytimes.com/newsletters/your-places-global-update
+Mar 02, 2025 5:35:35 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:35] [Crawling] https://www.nytimes.com/newsletters/canada-letter
+Mar 02, 2025 5:35:35 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:35] [Crawling] https://www.nytimes.com/section/business/economy
+Mar 02, 2025 5:35:35 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:35] [Crawling] https://www.nytimes.com/section/business/media
+Mar 02, 2025 5:35:36 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:36] [Crawling] https://www.nytimes.com/section/markets-overview
+Mar 02, 2025 5:35:36 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:36] [Crawling] https://www.nytimes.com/section/business/dealbook
+Mar 02, 2025 5:35:36 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:36] [Crawling] https://www.nytimes.com/section/technology/personaltech
+Mar 02, 2025 5:35:36 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:36] [Crawling] https://www.nytimes.com/section/business/energy-environment
+Mar 02, 2025 5:35:37 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:37] [Crawling] https://www.nytimes.com/section/your-money
+Mar 02, 2025 5:35:37 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:37] [Crawling] https://www.nytimes.com/news-event/economy-business-us
+Mar 02, 2025 5:35:37 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:37] [Crawling] https://www.nytimes.com/spotlight/artificial-intelligence
+Mar 02, 2025 5:35:37 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:37] [Crawling] https://www.nytimes.com/newsletters/dealbook
+Mar 02, 2025 5:35:38 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:38] [Crawling] https://www.nytimes.com/column/hard-fork
+Mar 02, 2025 5:35:38 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:38] [Crawling] https://www.nytimes.com/section/arts
+Mar 02, 2025 5:35:38 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:38] [Crawling] https://www.nytimes.com/section/books
+Mar 02, 2025 5:35:39 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:39] [Crawling] https://www.nytimes.com/books/best-sellers
+Mar 02, 2025 5:35:39 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:39] [Crawling] https://www.nytimes.com/section/arts/dance
+Mar 02, 2025 5:35:39 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:39] [Crawling] https://www.nytimes.com/section/movies
+Mar 02, 2025 5:35:39 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:39] [Crawling] https://www.nytimes.com/section/arts/music
+Mar 02, 2025 5:35:40 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:40] [Crawling] https://www.nytimes.com/section/arts/television
+Mar 02, 2025 5:35:40 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:40] [Crawling] https://www.nytimes.com/section/theater
+Mar 02, 2025 5:35:40 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:40] [Crawling] https://www.nytimes.com/spotlight/pop-culture
+Mar 02, 2025 5:35:40 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:40] [Crawling] https://www.nytimes.com/section/t-magazine
+Mar 02, 2025 5:35:41 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:41] [Crawling] https://www.nytimes.com/section/arts/design
+Mar 02, 2025 5:35:41 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:41] [Crawling] https://www.nytimes.com/interactive/2024/books/best-books-21st-century.html
+Mar 02, 2025 5:35:41 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:41] [Crawling] https://www.nytimes.com/spotlight/critics-picks
+Mar 02, 2025 5:35:42 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:42] [Crawling] https://www.nytimes.com/spotlight/books-to-read
+Mar 02, 2025 5:35:42 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:42] [Crawling] https://www.nytimes.com/spotlight/what-to-watch
+Mar 02, 2025 5:35:42 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:42] [Crawling] https://www.nytimes.com/column/playlist
+Mar 02, 2025 5:35:42 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:42] [Crawling] https://www.nytimes.com/interactive/2023/10/27/arts/music/music-fivemins-collection.html
+Mar 02, 2025 5:35:43 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:43] [Crawling] https://www.nytimes.com/newsletters/read-like-the-wind
+Mar 02, 2025 5:35:43 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:43] [Crawling] https://www.nytimes.com/newsletters/watching
+Mar 02, 2025 5:35:43 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:43] [Crawling] https://www.nytimes.com/column/book-review-podcast
+Mar 02, 2025 5:35:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:44] [Crawling] https://www.nytimes.com/column/popcast-pop-music-podcast
+Mar 02, 2025 5:35:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:44] [Crawling] https://www.nytimes.com/spotlight/lifestyle
+Mar 02, 2025 5:35:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:44] [Crawling] https://www.nytimes.com/section/well
+Mar 02, 2025 5:35:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:45] [Crawling] https://www.nytimes.com/section/travel
+Mar 02, 2025 5:35:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:45] [Crawling] https://www.nytimes.com/section/style
+Mar 02, 2025 5:35:46 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:46] [Crawling] https://www.nytimes.com/section/realestate
+Mar 02, 2025 5:35:47 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:47] [Crawling] https://www.nytimes.com/section/food
+Mar 02, 2025 5:35:48 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:48] [Crawling] https://www.nytimes.com/section/fashion/weddings
+Mar 02, 2025 5:35:48 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:48] [Crawling] https://www.nytimes.com/column/36-hours
+Mar 02, 2025 5:35:49 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:49] [Crawling] https://www.nytimes.com/column/ask-well
+Mar 02, 2025 5:35:49 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:49] [Crawling] https://www.nytimes.com/column/the-hunt
+Mar 02, 2025 5:35:50 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:50] [Crawling] https://www.nytimes.com/column/modern-love
+Mar 02, 2025 5:35:50 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:50] [Crawling] https://www.nytimes.com/spotlight/best-restaurants
+Mar 02, 2025 5:35:50 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:50] [Crawling] https://www.nytimes.com/column/vows
+Mar 02, 2025 5:35:50 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:50] [Crawling] https://www.nytimes.com/column/social-qs
+Mar 02, 2025 5:35:51 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:51] [Crawling] https://www.nytimes.com/column/the-ethicist
+Mar 02, 2025 5:35:51 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:51] [Crawling] https://www.nytimes.com/column/ask-the-therapist
+Mar 02, 2025 5:35:51 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:51] [Crawling] https://www.nytimes.com/newsletters/open-thread-fashion
+Mar 02, 2025 5:35:52 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:52] [Crawling] https://www.nytimes.com/newsletters/well
+Mar 02, 2025 5:35:52 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:52] [Crawling] https://www.nytimes.com/column/modern-love-podcast
+Mar 02, 2025 5:35:52 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:52] [Crawling] https://www.nytimes.com/section/opinion
+Mar 02, 2025 5:35:52 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:52] [Crawling] https://www.nytimes.com/section/opinion/contributors
+Mar 02, 2025 5:35:52 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:52] [Crawling] https://www.nytimes.com/section/opinion/editorials
+Mar 02, 2025 5:35:53 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:53] [Crawling] https://www.nytimes.com/column/op-docs
+Mar 02, 2025 5:35:53 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:53] [Crawling] https://www.nytimes.com/spotlight/opinion-video
+Mar 02, 2025 5:35:53 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:53] [Crawling] https://www.nytimes.com/section/opinion/letters
+Mar 02, 2025 5:35:53 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:53] [Crawling] https://www.nytimes.com/section/opinion/politics
+Mar 02, 2025 5:35:53 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:53] [Crawling] https://www.nytimes.com/section/opinion/international-world
+Mar 02, 2025 5:35:53 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:53] [Crawling] https://www.nytimes.com/section/opinion/business-economics
+Mar 02, 2025 5:35:54 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:54] [Crawling] https://www.nytimes.com/section/opinion/technology
+Mar 02, 2025 5:35:54 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:54] [Crawling] https://www.nytimes.com/section/opinion/environment
+Mar 02, 2025 5:35:54 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:54] [Crawling] https://www.nytimes.com/section/opinion/health
+Mar 02, 2025 5:35:54 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:54] [Crawling] https://www.nytimes.com/section/opinion/culture
+Mar 02, 2025 5:35:54 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:54] [Crawling] https://www.nytimes.com/by/jamelle-bouie
+Mar 02, 2025 5:35:54 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:54] [Crawling] https://www.nytimes.com/by/david-brooks
+Mar 02, 2025 5:35:55 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:55] [Crawling] https://www.nytimes.com/by/gail-collins
+Mar 02, 2025 5:35:55 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:55] [Crawling] https://www.nytimes.com/by/ross-douthat
+Mar 02, 2025 5:35:55 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:55] [Crawling] https://www.nytimes.com/by/maureen-dowd
+Mar 02, 2025 5:35:55 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:55] [Crawling] https://www.nytimes.com/by/david-french
+Mar 02, 2025 5:35:55 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:55] [Crawling] https://www.nytimes.com/by/thomas-l-friedman
+Mar 02, 2025 5:35:55 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:55] [Crawling] https://www.nytimes.com/by/m-gessen
+Mar 02, 2025 5:35:56 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:56] [Crawling] https://www.github.com
+Mar 02, 2025 5:35:56 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:56] [Crawling] https://www.nytimes.com/by/michelle-goldberg
+Mar 02, 2025 5:35:56 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:56] [Crawling] https://www.nytimes.com/by/ezra-klein
+Mar 02, 2025 5:35:56 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:56] [Crawling] https://www.nytimes.com/by/nicholas-kristof
+Mar 02, 2025 5:35:56 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:56] [Crawling] https://www.nytimes.com/by/carlos-lozada
+Mar 02, 2025 5:35:56 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:56] [Crawling] https://www.nytimes.com/by/tressie-mcmillan-cottom
+Mar 02, 2025 5:35:57 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:57] [Crawling] https://www.nytimes.com/by/pamela-paul
+Mar 02, 2025 5:35:57 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:57] [Crawling] https://www.nytimes.com/by/lydia-polgreen
+Mar 02, 2025 5:35:58 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:58] [Crawling] https://www.nytimes.com/by/bret-stephens
+Mar 02, 2025 5:35:58 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:58] [Crawling] https://www.nytimes.com/by/zeynep-tufekci
+Mar 02, 2025 5:35:58 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:58] [Crawling] https://www.nytimes.com/column/matter-of-opinion
+Mar 02, 2025 5:35:58 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:58] [Crawling] https://www.nytimes.com/column/ezra-klein-podcast
+Mar 02, 2025 5:35:59 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:59] [Crawling] https://www.nytimes.com/audio/app
+Mar 02, 2025 5:35:59 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:59] [Crawling] https://www.nytimes.com/column/the-headlines
+Mar 02, 2025 5:35:59 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:35:59] CrawlException: Failed to crawl URL: https://www.nytimes.com/audio/app | Cause: HTTP error fetching URL
+Mar 02, 2025 5:35:59 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:35:59] [CrawlException] Failed to crawl URL: https://www.nytimes.com/audio/app
+Mar 02, 2025 5:35:59 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:59] [Crawling] https://www.nytimes.com/interactive/2022/podcasts/serial-productions.html
+Mar 02, 2025 5:35:59 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:35:59] [Crawling] https://www.nytimes.com/spotlight/reporter-reads
+Mar 02, 2025 5:36:00 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:00] [Crawling] https://www.nytimes.com/spotlight/the-sunday-read
+Mar 02, 2025 5:36:00 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:00] [Crawling] https://www.nytimes.com/column/the-culture-desk
+Mar 02, 2025 5:36:00 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:00] [Crawling] https://www.nytimes.com/column/the-interview
+Mar 02, 2025 5:36:01 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:01] [Crawling] https://www.nytimes.com/interactive/2024/podcasts/serial-good-whale.html
+Mar 02, 2025 5:36:01 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:01] [Crawling] https://www.nytimes.com/newsletters/audio
+Mar 02, 2025 5:36:01 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:01] [Crawling] https://www.nytimes.com/subscription/all-access
+Mar 02, 2025 5:36:01 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:01] [Crawling] https://www.nytimes.com/crosswords
+Mar 02, 2025 5:36:01 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:01] [Crawling] https://www.nytimes.com/puzzles/spelling-bee
+Mar 02, 2025 5:36:02 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:02] [Crawling] https://www.nytimes.com/crosswords/game/mini
+Mar 02, 2025 5:36:02 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:02] [Crawling] https://www.nytimes.com/games/wordle/index.html
+Mar 02, 2025 5:36:02 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:02] [Crawling] https://www.nytimes.com/crosswords/game/daily/
+Mar 02, 2025 5:36:03 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:03] [Crawling] https://www.nytimes.com/games/strands
+Mar 02, 2025 5:36:03 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:03] [Crawling] https://www.nytimes.com/games/connections
+Mar 02, 2025 5:36:03 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:03] [Crawling] https://www.nytimes.com/puzzles/sudoku
+Mar 02, 2025 5:36:04 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:04] [Crawling] https://www.nytimes.com/puzzles/letter-boxed
+Mar 02, 2025 5:36:04 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:04] [Crawling] https://www.nytimes.com/puzzles/tiles
+Mar 02, 2025 5:36:04 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:04] [Crawling] https://www.nytimes.com/spotlight/spelling-bee-forum
+Mar 02, 2025 5:36:04 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:04] [Crawling] https://www.nytimes.com/spotlight/daily-crossword-column
+Mar 02, 2025 5:36:05 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:05] [Crawling] https://www.nytimes.com/spotlight/wordle-review
+Mar 02, 2025 5:36:05 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:05] [Crawling] https://www.nytimes.com/article/submit-crossword-puzzles-the-new-york-times.html
+Mar 02, 2025 5:36:05 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:05] [Crawling] https://www.nytimes.com/spotlight/puzzle-making
+Mar 02, 2025 5:36:05 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:36:05] CrawlException: Failed to crawl URL: https://www.nytimes.com/article/submit-crossword-puzzles-the-new-york-times.html | Cause: HTTP error fetching URL
+Mar 02, 2025 5:36:05 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:36:05] [CrawlException] Failed to crawl URL: https://www.nytimes.com/article/submit-crossword-puzzles-the-new-york-times.html
+Mar 02, 2025 5:36:05 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:05] [Crawling] https://www.nytimes.com/2022/09/19/crosswords/mini-to-maestro-part-1.html
+Mar 02, 2025 5:36:05 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:05] [Crawling] https://www.nytimes.com/interactive/2022/upshot/wordle-bot.html
+Mar 02, 2025 5:36:05 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:36:05] CrawlException: Failed to crawl URL: https://www.nytimes.com/2022/09/19/crosswords/mini-to-maestro-part-1.html | Cause: HTTP error fetching URL
+Mar 02, 2025 5:36:05 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:36:05] [CrawlException] Failed to crawl URL: https://www.nytimes.com/2022/09/19/crosswords/mini-to-maestro-part-1.html
+Mar 02, 2025 5:36:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:06] [Crawling] https://www.nytimes.com/puzzle-personality
+Mar 02, 2025 5:36:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:06] [Crawling] https://www.nytimes.com/newsletters/gameplay
+Mar 02, 2025 5:36:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:06] [Crawling] https://www.nytimes.com/newsletters/easy-mode
+Mar 02, 2025 5:36:06 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:06] [Crawling] https://www.nytimes.com/newsletters/cooking
+Mar 02, 2025 5:36:07 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:07] [Crawling] https://www.nytimes.com/newsletters/the-veggie
+Mar 02, 2025 5:36:07 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:07] [Crawling] https://www.nytimes.com/newsletters/five-weeknight-dishes
+Mar 02, 2025 5:36:07 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:07] [Crawling] https://www.nytimes.com/wirecutter/
+Mar 02, 2025 5:36:07 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:07] [Crawling] https://www.nytimes.com/wirecutter
+Mar 02, 2025 5:36:08 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:08] [Crawling] https://www.nytimes.com/wirecutter/kitchen-dining/
+Mar 02, 2025 5:36:08 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:08] [Crawling] https://www.nytimes.com/wirecutter/electronics/
+Mar 02, 2025 5:36:08 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:08] [Crawling] https://www.nytimes.com/wirecutter/sleep/
+Mar 02, 2025 5:36:08 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:08] [Crawling] https://www.nytimes.com/wirecutter/appliances/
+Mar 02, 2025 5:36:09 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:09] [Crawling] https://www.nytimes.com/wirecutter/home-garden/
+Mar 02, 2025 5:36:09 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:09] [Crawling] https://www.nytimes.com/wirecutter/make-a-plan/moving/
+Mar 02, 2025 5:36:09 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:09] [Crawling] https://www.nytimes.com/wirecutter/travel/
+Mar 02, 2025 5:36:12 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:12] [Crawling] https://www.nytimes.com/wirecutter/gifts/
+Mar 02, 2025 5:36:13 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:13] [Crawling] https://www.nytimes.com/wirecutter/deals/
+Mar 02, 2025 5:36:13 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:13] [Crawling] https://www.nytimes.com/wirecutter/baby-kid/
+Mar 02, 2025 5:36:13 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:13] [Crawling] https://www.nytimes.com/wirecutter/health-fitness/
+Mar 02, 2025 5:36:14 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:14] [Crawling] https://www.nytimes.com/wirecutter/reviews/best-air-purifier/
+Mar 02, 2025 5:36:15 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:15] [Crawling] https://www.nytimes.com/wirecutter/reviews/best-electric-toothbrush/
+Mar 02, 2025 5:36:15 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:15] [Crawling] https://www.nytimes.com/wirecutter/reviews/best-pressure-washer/
+Mar 02, 2025 5:36:16 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:16] [Crawling] https://www.nytimes.com/wirecutter/reviews/best-cordless-stick-vacuum/
+Mar 02, 2025 5:36:16 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:16] [Crawling] https://www.nytimes.com/wirecutter/reviews/best-office-chair/
+Mar 02, 2025 5:36:17 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:17] [Crawling] https://www.nytimes.com/wirecutter/reviews/best-robot-vacuum/
+Mar 02, 2025 5:36:17 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:17] [Crawling] https://www.nytimes.com/newsletters/the-recommendation
+Mar 02, 2025 5:36:17 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:17] [Crawling] https://www.nytimes.com/newsletters/clean-everything
+Mar 02, 2025 5:36:17 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:17] [Crawling] https://www.nytimes.com/athletic/
+Mar 02, 2025 5:36:17 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:17] [Crawling] https://www.nytimes.com/athletic/nfl/
+Mar 02, 2025 5:36:18 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:18] [Crawling] https://www.nytimes.com/athletic/nba/
+Mar 02, 2025 5:36:18 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:18] [Crawling] https://www.nytimes.com/athletic/nhl/
+Mar 02, 2025 5:36:18 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:18] [Crawling] https://www.nytimes.com/athletic/football/premier-league/
+Mar 02, 2025 5:36:19 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:19] [Crawling] https://www.nytimes.com/athletic/mlb/
+Mar 02, 2025 5:36:20 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:20] [Crawling] https://www.nytimes.com/athletic/college-football/
+Mar 02, 2025 5:36:21 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:21] [Crawling] https://www.nytimes.com/athletic/college-basketball/
+Mar 02, 2025 5:36:23 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:23] [Crawling] https://www.nytimes.com/athletic/womens-college-basketball/
+Mar 02, 2025 5:36:42 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:42] [Crawling] https://www.nytimes.com/athletic/tennis/
+Mar 02, 2025 5:36:47 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:47] [Crawling] https://www.nytimes.com/athletic/formula-1/
+Mar 02, 2025 5:36:48 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:48] [Crawling] https://www.nytimes.com/athletic/sports-betting/
+Mar 02, 2025 5:36:50 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:50] [Crawling] https://www.nytimes.com/athletic/wnba/
+Mar 02, 2025 5:36:51 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:51] [Crawling] https://www.nytimes.com/athletic/tag/bracketcentral/
+Mar 02, 2025 5:36:51 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:51] [Crawling] https://www.nytimes.com/athletic/nfl/draft/
+Mar 02, 2025 5:36:52 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:52] [Crawling] https://www.nytimes.com/athletic/tag/transfer-news/
+Mar 02, 2025 5:36:53 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:53] [Crawling] https://www.nytimes.com/athletic/newsletters/the-pulse/
+Mar 02, 2025 5:36:53 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:53] [Crawling] https://www.nytimes.com/athletic/newsletters/scoop-city/
+Mar 02, 2025 5:36:54 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:54] [Crawling] https://www.nytimes.com/athletic/5803046/2024/09/30/the-athletic-newsletters-sign-up/
+Mar 02, 2025 5:36:54 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:54] [Crawling] https://www.nytimes.com/athletic/connections-sports-edition
+Mar 02, 2025 5:36:54 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:54] [Crawling] https://www.nytimes.com/athletic/tag/connections-sports-edition-coach/
+Mar 02, 2025 5:36:56 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:56] [Crawling] https://www.nytimes.com/2025/03/02/us/politics/hegseth-cyber-russia-trump-putin.html
+Mar 02, 2025 5:36:56 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:36:56] CrawlException: Failed to crawl URL: https://www.nytimes.com/2025/03/02/us/politics/hegseth-cyber-russia-trump-putin.html | Cause: HTTP error fetching URL
+Mar 02, 2025 5:36:56 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:36:56] [CrawlException] Failed to crawl URL: https://www.nytimes.com/2025/03/02/us/politics/hegseth-cyber-russia-trump-putin.html
+Mar 02, 2025 5:36:56 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:56] [Crawling] https://www.nytimes.com/2025/03/02/world/europe/starmer-zelensky-meeting-europe-ukraine-trump.html
+Mar 02, 2025 5:36:56 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:36:56] CrawlException: Failed to crawl URL: https://www.nytimes.com/2025/03/02/world/europe/starmer-zelensky-meeting-europe-ukraine-trump.html | Cause: HTTP error fetching URL
+Mar 02, 2025 5:36:56 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:36:56] [CrawlException] Failed to crawl URL: https://www.nytimes.com/2025/03/02/world/europe/starmer-zelensky-meeting-europe-ukraine-trump.html
+Mar 02, 2025 5:36:56 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:56] [Crawling] https://www.nytimes.com/2025/03/02/us/politics/marco-rubio-zelensky-ukraine-trump.html
+Mar 02, 2025 5:36:56 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:36:56] CrawlException: Failed to crawl URL: https://www.nytimes.com/2025/03/02/us/politics/marco-rubio-zelensky-ukraine-trump.html | Cause: HTTP error fetching URL
+Mar 02, 2025 5:36:56 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:36:56] [CrawlException] Failed to crawl URL: https://www.nytimes.com/2025/03/02/us/politics/marco-rubio-zelensky-ukraine-trump.html
+Mar 02, 2025 5:36:56 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:36:56] [Crawling] https://www.nytimes.com/interactive/2025/us/trump-agenda-2025.html
+Mar 02, 2025 5:37:26 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:26] [Crawling] https://www.nytimes.com
+Mar 02, 2025 5:37:33 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:33] [Crawling] https://www.nytimes.com#site-content
+Mar 02, 2025 5:37:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:34] [Crawling] https://www.nytimes.com#site-index
+Mar 02, 2025 5:37:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:34] [Crawling] https://www.nytimes.com#after-dfp-ad-top
+Mar 02, 2025 5:37:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:34] [Crawling] https://www.nytimes.com/
+Mar 02, 2025 5:37:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:34] [Crawling] https://www.nytimes.com/international/
+Mar 02, 2025 5:37:34 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:34] [Crawling] https://www.nytimes.com/ca/
+Mar 02, 2025 5:37:35 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:35] [Crawling] https://www.nytimes.com/es/
+Mar 02, 2025 5:37:35 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:37:35] CrawlException: Failed to crawl URL: https://www.nytimes.com/es/ | Cause: HTTP error fetching URL
+Mar 02, 2025 5:37:35 PM com.eulerity.hackathon.imagefinder.Logger log
+SEVERE: [2025-03-02 17:37:35] [CrawlException] Failed to crawl URL: https://www.nytimes.com/es/
+Mar 02, 2025 5:37:35 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:35] [Crawling] https://www.nytimes.com/section/todayspaper
+Mar 02, 2025 5:37:35 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:35] [Crawling] https://www.nytimes.com/section/us
+Mar 02, 2025 5:37:36 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:36] [Crawling] https://www.nytimes.com/section/politics
+Mar 02, 2025 5:37:36 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:36] [Crawling] https://www.nytimes.com/section/nyregion
+Mar 02, 2025 5:37:36 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:36] [Crawling] https://www.nytimes.com/spotlight/california-news
+Mar 02, 2025 5:37:37 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:37] [Crawling] https://www.nytimes.com/section/education
+Mar 02, 2025 5:37:38 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:38] [Crawling] https://www.nytimes.com/section/health
+Mar 02, 2025 5:37:39 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:39] [Crawling] https://www.nytimes.com/section/obituaries
+Mar 02, 2025 5:37:40 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:40] [Crawling] https://www.nytimes.com/section/science
+Mar 02, 2025 5:37:40 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:40] [Crawling] https://www.nytimes.com/section/climate
+Mar 02, 2025 5:37:40 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:40] [Crawling] https://www.nytimes.com/section/weather
+Mar 02, 2025 5:37:42 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:42] [Crawling] https://www.nytimes.com/section/sports
+Mar 02, 2025 5:37:42 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:42] [Crawling] https://www.nytimes.com/section/business
+Mar 02, 2025 5:37:42 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:42] [Crawling] https://www.nytimes.com/section/technology
+Mar 02, 2025 5:37:43 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:43] [Crawling] https://www.nytimes.com/section/upshot
+Mar 02, 2025 5:37:43 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:43] [Crawling] https://www.nytimes.com/section/magazine
+Mar 02, 2025 5:37:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:44] [Crawling] https://www.nytimes.com/news-event/trump-transition
+Mar 02, 2025 5:37:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:44] [Crawling] https://www.nytimes.com/topic/organization/us-supreme-court
+Mar 02, 2025 5:37:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:44] [Crawling] https://www.nytimes.com/topic/organization/us-congress
+Mar 02, 2025 5:37:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:44] [Crawling] https://www.nytimes.com/news-event/immigration-us
+Mar 02, 2025 5:37:44 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:44] [Crawling] https://www.nytimes.com/spotlight/abortion-news
+Mar 02, 2025 5:37:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:45] [Crawling] https://www.nytimes.com/newsletters/morning-briefing
+Mar 02, 2025 5:37:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:45] [Crawling] https://www.nytimes.com/newsletters/upshot
+Mar 02, 2025 5:37:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:45] [Crawling] https://www.nytimes.com/newsletters
+Mar 02, 2025 5:37:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:45] [Crawling] https://www.nytimes.com/column/the-daily
+Mar 02, 2025 5:37:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:45] [Crawling] https://www.nytimes.com/column/election-run-up-podcast
+Mar 02, 2025 5:37:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:45] [Crawling] https://www.nytimes.com/spotlight/podcasts
+Mar 02, 2025 5:37:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:45] [Crawling] https://www.nytimes.com/section/world
+Mar 02, 2025 5:37:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:45] [Crawling] https://www.nytimes.com/section/world/africa
+Mar 02, 2025 5:37:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:45] [Crawling] https://www.nytimes.com/section/world/americas
+Mar 02, 2025 5:37:45 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:45] [Crawling] https://www.nytimes.com/section/world/asia
+Mar 02, 2025 5:37:46 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:46] [Crawling] https://www.nytimes.com/section/world/australia
+Mar 02, 2025 5:37:46 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:46] [Crawling] https://www.nytimes.com/section/world/canada
+Mar 02, 2025 5:37:46 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:46] [Crawling] https://www.nytimes.com/section/world/europe
+Mar 02, 2025 5:37:46 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:46] [Crawling] https://www.nytimes.com/section/world/middleeast
+Mar 02, 2025 5:37:46 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:46] [Crawling] https://www.nytimes.com/news-event/israel-hamas-gaza
+Mar 02, 2025 5:37:46 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:46] [Crawling] https://www.nytimes.com/news-event/ukraine-russia
+Mar 02, 2025 5:37:47 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:47] [Crawling] https://www.nytimes.com/spotlight/china-relations
+Mar 02, 2025 5:37:47 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:47] [Crawling] https://www.nytimes.com/column/the-global-profile
+Mar 02, 2025 5:37:47 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:47] [Crawling] https://www.nytimes.com/newsletters/morning-briefing-europe
+Mar 02, 2025 5:37:47 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:47] [Crawling] https://www.nytimes.com/newsletters/the-interpreter
+Mar 02, 2025 5:37:47 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:47] [Crawling] https://www.nytimes.com/newsletters/your-places-global-update
+Mar 02, 2025 5:37:47 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:47] [Crawling] https://www.nytimes.com/newsletters/canada-letter
+Mar 02, 2025 5:37:47 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:47] [Crawling] https://www.nytimes.com/section/business/economy
+Mar 02, 2025 5:37:48 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:48] [Crawling] https://www.nytimes.com/section/business/media
+Mar 02, 2025 5:37:48 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:48] [Crawling] https://www.nytimes.com/section/markets-overview
+Mar 02, 2025 5:37:48 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:48] [Crawling] https://www.nytimes.com/section/business/dealbook
+Mar 02, 2025 5:37:48 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:48] [Crawling] https://www.nytimes.com/section/technology/personaltech
+Mar 02, 2025 5:37:48 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:48] [Crawling] https://www.nytimes.com/section/business/energy-environment
+Mar 02, 2025 5:37:49 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:49] [Crawling] https://www.nytimes.com/section/your-money
+Mar 02, 2025 5:37:49 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:49] [Crawling] https://www.nytimes.com/news-event/economy-business-us
+Mar 02, 2025 5:37:50 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:50] [Crawling] https://www.nytimes.com/spotlight/artificial-intelligence
+Mar 02, 2025 5:37:50 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:50] [Crawling] https://www.nytimes.com/newsletters/dealbook
+Mar 02, 2025 5:37:51 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:51] [Crawling] https://www.nytimes.com/column/hard-fork
+Mar 02, 2025 5:37:51 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:51] [Crawling] https://www.nytimes.com/section/arts
+Mar 02, 2025 5:37:51 PM com.eulerity.hackathon.imagefinder.Logger log
+INFO: [2025-03-02 17:37:51] [Crawling] https://www.nytimes.com/section/books
