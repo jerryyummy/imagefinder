@@ -1,1 +1,6 @@
 Please paste your list of test URLs below:
+https://www.nytimes.com
+https://unsplash.com/
+https://www.cnn.com/
+https://www.nationalgeographic.com/
+https://www.deviantart.com/
