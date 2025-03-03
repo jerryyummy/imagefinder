@@ -1,8 +1,6 @@
 package com.eulerity.hackathon.imagefinder;
 
-import com.google.cloud.vision.v1.*;
 import com.google.gson.Gson;
-import com.google.protobuf.ByteString;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -13,6 +11,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
@@ -83,6 +82,11 @@ public class ImageCrawler {
     }
 
 
+    /**
+     * Is crawling boolean.
+     *
+     * @return the boolean
+     */
     public boolean isCrawling() {
         return isCrawling;
     }
@@ -171,9 +175,26 @@ public class ImageCrawler {
      */
     private boolean isValidImage(String imageUrl) {
         try {
-            BufferedImage img = ImageIO.read(new URL(imageUrl));
-            if (img == null) return false;
-            return true;
+            URL url = new URL(imageUrl);
+            URLConnection connection = url.openConnection();
+            connection.setConnectTimeout(3000);
+            connection.setReadTimeout(3000);
+
+            String contentType = connection.getContentType();
+            int contentLength = connection.getContentLength();
+
+            List<String> allowedTypes = Arrays.asList("image/jpeg", "image/png", "image/webp");
+
+            if (!allowedTypes.contains(contentType)) {
+                return false;
+            }
+
+            if (contentLength < 10240 || contentLength > 5 * 1024 * 1024) {
+                return false;
+            }
+
+            BufferedImage img = ImageIO.read(url);
+            return img != null;
         } catch (IOException e) {
             return false;
         }
@@ -222,7 +243,9 @@ public class ImageCrawler {
      * @return the image urls as json
      */
     public String getImageUrlsAsJson() {
-        return new Gson().toJson(imageUrls);
+        synchronized (imageUrls) {
+            return new Gson().toJson(new ArrayList<>(imageUrls));
+        }
     }
 
     /**
@@ -231,6 +254,8 @@ public class ImageCrawler {
      * @return the logo urls as json
      */
     public String getLogoUrlsAsJson() {
-        return new Gson().toJson(logoImages);
+        synchronized (logoImages) {
+            return new Gson().toJson(new ArrayList<>(logoImages));
+        }
     }
 }

@@ -159,7 +159,7 @@ public class ImageFinder extends HttpServlet {
                 long startTime = System.currentTimeMillis();
 
                 while (crawler.isCrawling()) {
-                    if (System.currentTimeMillis() - startTime > 10000) { // **超过 10 秒**
+                    if (System.currentTimeMillis() - startTime > 10000) {
                         System.out.println("[Timeout] Crawling exceeded 10 seconds, returning partial results.");
                         future.complete(getCurrentCrawlResult(url));
                         return;
