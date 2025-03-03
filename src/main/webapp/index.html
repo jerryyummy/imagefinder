@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eulerity Image Crawler</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<title>Eulerity Image Crawler</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 </head>
+
 <body>
-<h1>Eulerity Image Crawler</h1>
+	<section class="w3l-coming-soon">
+		<div class="bgimg text-center">
+			<div class="topleft">
+				<img class="brand-logo" src="favicon.ico" type="image/x-icon" alt="Eulerity">
+			</div>
+			<div class="middle">
+				<h1>Eulerity Image Crawler</h1>
 
-<div class="container">
-    <h2>Enter a URL to crawl images</h2>
-    <input type="text" name="url" id="urlInput" placeholder="Enter a valid website URL...">
-    <button id="submitBtn">Submit</button>
-    <p class="error" id="errorMessage"></p>
-    <p class="loading" id="loadingMessage">Crawling... Please wait</p>
-    <p class="stats" id="statsMessage"></p>
-</div>
+				<div class="form-right-inf">
+					<h2 class="subscribe-txt">Enter a URL to crawl images</h2>
+                    <div>
+                        <input type="text" name="url" id="urlInput" placeholder="Enter a valid website URL...">
+                        <button id="submitBtn" class="btn">Submit</button>
+                        <p class="error" id="errorMessage"></p>
+                        <p class="loading" id="loadingMessage">Crawling... Please wait</p>
+                        <p class="stats" id="statsMessage"></p>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<div class="output results-container">
-    <div class="results">
-        <h3>Normal Images</h3>
-        <ul class="image-grid" id="normalImageList"></ul>
+    <div class="output results-container">
+        <div class="results">
+            <h3>Normal Images</h3>
+            <ul class="image-grid" id="normalImageList"></ul>
+        </div>
+        <div class="results">
+            <h3>Logo Images</h3>
+            <ul class="image-grid" id="logoImageList"></ul>
+        </div>
     </div>
-    <div class="results">
-        <h3>Logo Images</h3>
-        <ul class="image-grid" id="logoImageList"></ul>
-    </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

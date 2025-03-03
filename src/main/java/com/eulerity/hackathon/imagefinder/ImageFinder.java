@@ -148,7 +148,7 @@ public class ImageFinder extends HttpServlet {
     /**
      * start crawl and return `CompletableFuture`
      */
-    private CompletableFuture<CrawlResult> startCrawling(String url) {
+    CompletableFuture<CrawlResult> startCrawling(String url) {
         CompletableFuture<CrawlResult> future = new CompletableFuture<>();
 
         Future<?> task = CrawlingThreadPool.getInstance().getExecutor().submit(() -> {
