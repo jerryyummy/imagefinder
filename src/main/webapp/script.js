@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var loadingMessage = document.querySelector('#loadingMessage');
     var statsMessage = document.querySelector('#statsMessage');
     var submitBtn = document.querySelector('#submitBtn');
+    let socket = new WebSocket("ws://localhost:8080/socket");
+
+    socket.onmessage = function(event) {
+        let response = JSON.parse(event.data);
+        updateList(response);
+    };
 
     function apiCallBack(xhr, callback) {
         if (xhr.readyState === XMLHttpRequest.DONE) {
@@ -101,14 +107,20 @@ document.addEventListener("DOMContentLoaded", function() {
         normalImageList.innerHTML = '';
         logoImageList.innerHTML = '';
 
-        makeApiCall('main?url=' + encodeURIComponent(url), 'POST', null, function(response) {
-            if (response.status === "in_progress") {
-                checkCrawlStatus(url); // 触发轮询，等待爬取完成
-            } else {
-                updateList(response);
-            }
-        });
+        if (socket && socket.readyState === WebSocket.OPEN) {
+            socket.send(JSON.stringify({ action: "crawl", url: url }));
+            checkCrawlStatus(url);
+        } else {
+            makeApiCall('main?url=' + encodeURIComponent(url), 'POST', null, function(response) {
+                if (response.status === "in_progress") {
+                    checkCrawlStatus(url);
+                } else {
+                    updateList(response);
+                }
+            });
+        }
     });
+
 
     urlInput.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
